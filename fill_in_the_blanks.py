@@ -1,38 +1,34 @@
 # Input your name.
 # Select the level(easy, medium, hard):
 # Load problem set
-    # easy - 2 problem set
-    # medium - 3 problem set
-    # hard - 4 problem set
+    # Python - 3 problem set
+    # Math - 3 problem set
 # Print out the problem set
 # Problem subject - Python related or Calculate or etc.
 # Solution set
 # User input for solution
 # Result print out
-
-def choose_problem(level):
-    if level == 'easy':
-        return easy_problem()
-    elif level == 'medium':
-        return medium_problem()
-    elif level == 'hard':
-        return hard_problem()
+p_set = []
+def choose_problem():
+    level = raw_input('Please select the problem category - python or math : ')
+    p_set = level
+    if level == 'python':
+        return python_problem()
+    elif level == 'math':
+        return math_problem()
     else:
         print 'Please select correct level.'
 
+def python_problem():
+    print '\nThese are python questions.'
+    p_set.append('python')
 
+def math_problem():
+    print '\nThese are math questions.'
+    p_set.append('math')
 
+def start_fbgame():
+    choose_problem()
+    print p_set[0]
 
-def easy_problem():
-    print 'This problem set is easy.'
-
-def medium_problem():
-    print 'This problem set is medium.'
-
-def hard_problem():
-    print 'This problem set is hard.'
-
-choose_problem('easy')
-choose_problem('medium')
-choose_problem('hard')
-choose_problem('hello')    
+start_fbgame()
