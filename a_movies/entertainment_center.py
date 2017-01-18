@@ -74,5 +74,10 @@ avatar = media.Movie('Avatar',
 #avatar = media.Movie()
 
 movies = [iron_man_1, iron_man_2, iron_man_3, deadpool, jumper, twenty_one, the_nightmare_before_christmas]
-fresh_tomatoes.open_movies_page(movies)
-
+#fresh_tomatoes.open_movies_page(movies)
+print media.Movie.VALID_RATINGS
+print(media.Movie.__doc__)
+print(media.Movie.__name__)
+print(media.Movie.__module__)
+print media.Movie.__dict__
+#print media.movie.__bases__
