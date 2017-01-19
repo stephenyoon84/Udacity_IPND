@@ -18,7 +18,7 @@ import fresh_tomatoes
 #print (toy_story.storyline)
 
 
-
+#My favorite movies
 twenty_one = media.Movie('21',
                          'The MIT students play card in Las Vegas Casinos',
                          'https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/21_%282008_film%29.jpg/220px-21_%282008_film%29.jpg',
@@ -55,7 +55,7 @@ jumper = media.Movie('Jumper',
                      'https://www.youtube.com/watch?v=X5ZNG3Oveh4')
                    
 
-
+#Instructor's favorite movie
 '''toy_story = media.Movie('Toy Story',
                         'A stroy of a boy and his toys that come to life',
                         'http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg',
@@ -74,10 +74,10 @@ avatar = media.Movie('Avatar',
 #avatar = media.Movie()
 
 movies = [iron_man_1, iron_man_2, iron_man_3, deadpool, jumper, twenty_one, the_nightmare_before_christmas]
-#fresh_tomatoes.open_movies_page(movies)
-print media.Movie.VALID_RATINGS
-print(media.Movie.__doc__)
-print(media.Movie.__name__)
-print(media.Movie.__module__)
-print media.Movie.__dict__
+fresh_tomatoes.open_movies_page(movies)
+#print media.Movie.VALID_RATINGS
+#print(media.Movie.__doc__)
+#print(media.Movie.__name__)
+#print(media.Movie.__module__)
+#print media.Movie.__dict__
 #print media.movie.__bases__
